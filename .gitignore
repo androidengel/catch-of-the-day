@@ -3,3 +3,4 @@ node_modules/
 .idea
 notes.md
 catch-of-the-day/build/
+environment.js

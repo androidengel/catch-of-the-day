@@ -1,10 +1,11 @@
 import Rebase from 're-base';
 import firebase from 'firebase';
+import env from './environment';
 
 const firebaseApp = firebase.initializeApp({
-  apiKey: "AIzaSyBr1U1Wd40f81otBfH_c9I1sqG2RDPV3P8",
-  authDomain: "catch-of-the-day-andrew-engel.firebaseapp.com",
-  databaseURL: "https://catch-of-the-day-andrew-engel.firebaseio.com",
+  apiKey: env.API_KEY,
+  authDomain: env.AUTH_DOMAIN,
+  databaseURL: env.DATABASE_URL,
 });
 
 const base = Rebase.createClass(firebaseApp.database());
